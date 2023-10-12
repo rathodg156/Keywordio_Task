@@ -1,0 +1,95 @@
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+th,
+td {
+  padding: 5px 5px;
+  text-align: left;
+}
+
+thead {
+  background-color: #f5f5f5;
+}
+
+/* Apply styles to specific header cells */
+th:nth-child(1),
+th:nth-child(2),
+th:nth-child(3),
+th:nth-child(4),
+th:nth-child(5) {
+  font-weight: bold;
+  text-align: center; /* Center-align header values */
+}
+
+/* Alternate row background color */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect on rows */
+tbody tr:hover {
+  background-color: #e0e0e0;
+}
+
+/* Center align numeric columns */
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5) {
+  text-align: center;
+}
+
+/* Add space before USD in Cost and Revenue columns */
+td:nth-child(3)::before,
+td:nth-child(5)::before {
+  content: "USD ";
+}
+
+/* Add commas to numeric columns */
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5) {
+  text-align: center;
+}
+
+/* Responsive table styles for smaller screens */
+@media (max-width: 768px) {
+  th,
+  td {
+    padding: 10px;
+  }
+  table {
+    font-size: 14px;
+  }
+}
+
+/*--  CSS for Form ---*/
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-item {
+  flex: 0 0 33.33%; 
+  margin-right: 1%; 
+  box-sizing: border-box;
+  width: 100%;
+}
+
+label {
+  display: block;
+}
+
+
+
+
+
